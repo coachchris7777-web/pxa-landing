@@ -1080,13 +1080,170 @@
 </head>
 <body>
 
-<div id="root"></div>
-<noscript>
-  <div style="padding:48px;color:#B0BEC5;font:16px/1.6 system-ui,sans-serif;max-width:520px">
-    <h1 style="color:#fff;font-size:24px;margin:0 0 16px">Plan Execute Achieve</h1>
-    <p>This site requires JavaScript to display. Please enable JavaScript and reload the page.</p>
+<div id="root">
+
+<!-- Static pre-render for SEO and no-JS fallback — React replaces on load -->
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<nav class="nav">
+  <div class="wrap">
+    <div class="nav-inner" style="padding:14px 0">
+      <a href="#top" class="nav-brand">
+        <span class="nav-mark" style="font-size:20px">P<span class="x">X</span>A</span>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <span class="nav-name">Plan · Execute · Achieve<span class="tm">™</span></span>
+      </a>
+      <div class="nav-links">
+        <a href="#premise">The Premise</a>
+        <a href="#fieldtests">Field Tests</a>
+        <a href="#research">Research</a>
+        <a href="#speaking">Speaking</a>
+      </div>
+      <div class="nav-mobile">
+        <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-mobile-menu" aria-label="Open navigation menu">
+          <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </div>
   </div>
-</noscript>
+</nav>
+
+<main id="main-content">
+
+<section id="top" class="hero" data-screen-label="01 Hero">
+  <div class="wrap hero-content">
+    <div class="hero-single">
+      <h1 class="serif hero-headline">The way you deliver is about to <em>change.</em></h1>
+      <p class="hero-sub">For delivery leaders, founders, and builders navigating the shift to AI-native delivery.</p>
+      <div class="cta-row">
+        <a href="https://forms.gle/HKt6qsBQUwGCPENJA" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Shape the research <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="manifesto" class="section manifesto-section" data-screen-label="02 The Shift">
+  <div class="wrap">
+    <p class="manifesto-lede">Everything is <em>compressing</em>.</p>
+    <div class="manifesto-lines">
+      <p class="manifesto-line"><strong>Cycles.</strong> <strong>Timelines.</strong> The distance between idea and outcome.</p>
+      <p class="manifesto-line">AI has compressed execution. The teams that lead from here will be the ones that turn faster motion into clearer <strong>signal</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="premise" class="section section-panel" data-screen-label="03 The Premise">
+  <div class="wrap">
+    <div class="premise-intro">
+      <div class="section-head">
+        <h2 class="serif section-title">Turn speed into <em>signal</em>.</h2>
+        <p class="section-lede">AI is changing delivery: from tasks assigned to people, to outcomes pursued by people and agents together. When execution gets compressed, direction becomes the constraint. Teams need a way to know, quickly and clearly, whether work is advancing strategic intent or drifting from it. That evidence is signal. Everything else becomes noise.</p>
+      </div>
+      <div class="premise-visual" aria-hidden="true">
+        <img src="assets/images/premise-signal.jpg" alt="Abstract visualization of data streams converging into actionable signal" loading="lazy" decoding="async" />
+      </div>
+    </div>
+    <div class="premise-grid">
+      <div class="premise-cell">
+        <div class="serif premise-word"><span class="premise-num">01</span>Plan</div>
+        <div class="premise-right">
+          <p class="premise-hook">Direction before motion.</p>
+          <p class="premise-body">Define intent, assumptions, constraints, and the signal you are looking for before fast work becomes random work.</p>
+        </div>
+      </div>
+      <div class="premise-cell">
+        <div class="serif premise-word"><span class="premise-num">02</span>Execute</div>
+        <div class="premise-right">
+          <p class="premise-hook">Evidence through action.</p>
+          <p class="premise-body">Identify and manage signal as it emerges through execution. Decisions, handoffs, exceptions, and outcomes become evidence teams can use to keep people and agents advancing intent.</p>
+        </div>
+      </div>
+      <div class="premise-cell">
+        <div class="serif premise-word"><span class="premise-num">03</span>Achieve</div>
+        <div class="premise-right">
+          <p class="premise-hook">Proof for what comes next.</p>
+          <p class="premise-body">Ask what the work proved, what changed because of it, and what should happen next.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fieldtests" class="section section-panel" data-screen-label="04 Field Tests">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="serif section-title">Where speed loses <em>signal</em>.</h2>
+      <p class="section-lede">Three working reads on the gaps opening as delivery cycles compress.</p>
+    </div>
+    <div class="ft-grid">
+      <div class="ft-cell">
+        <div class="ft-gap">The Decision Gap</div>
+        <h3 class="ft-headline">Teams can now build faster than their organizations can decide what to build.</h3>
+        <p class="ft-body">Execution has compressed. Governance hasn't. Decision structures designed for a slower era can't produce answers at the speed the work now demands. Either decisions get rubber-stamped without real examination, or teams sit idle waiting on approvals that take longer than the build itself.</p>
+      </div>
+      <div class="ft-cell">
+        <div class="ft-gap">The Validation Gap</div>
+        <h3 class="ft-headline">Teams can now ship faster than they can prove they built the right thing.</h3>
+        <p class="ft-body">AI tools compressed the generation phase. They didn't compress — and most teams haven't rebuilt — the judgment layer that catches whether the right thing was built. Validation used to happen implicitly, through the friction of slower cycles. That friction is gone. What's left is teams shipping fast, looking productive, and accumulating unverified work whose cost shows up later.</p>
+      </div>
+      <div class="ft-cell">
+        <div class="ft-gap">The Measurement Gap</div>
+        <h3 class="ft-headline">The metrics we inherited are measuring the thing that's become cheapest.</h3>
+        <p class="ft-body">Velocity, utilization, on-time delivery — all designed for an era when execution capacity was the binding constraint. When the constraint moves up the stack, these metrics measure the wrong thing. Teams optimizing for them are optimizing for the part of the work that's disappearing. The dashboards look healthy while the work drifts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="research" class="section" data-screen-label="05 Research">
+  <div class="wrap">
+    <div class="research-card">
+      <div class="research-left">
+        <div class="eyebrow-text" style="color:var(--mint)">— State of Delivery 2026</div>
+        <h3 class="research-title">An anonymous survey for the people doing the work.</h3>
+        <p class="research-body">We are mapping how delivery actually works now: where teams are gaining speed, where signal is breaking down, and what new operating patterns are emerging.</p>
+      </div>
+      <div class="research-right">
+        <a href="https://forms.gle/HKt6qsBQUwGCPENJA" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Take the survey <span class="arrow">→</span></a>
+        <div class="research-meta">10 questions<span class="sep">·</span>Anonymous<span class="sep">·</span>Under 3 min</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="speaking" class="section" data-screen-label="06 Speaking">
+  <div class="wrap">
+    <div class="speaking-wrap">
+      <div class="speaking-rule"></div>
+      <h2 class="serif speaking-title">Invite the conversation.</h2>
+      <p class="speaking-body">Talks, panels, and workshops for delivery leaders navigating the shift.</p>
+      <a href="https://forms.gle/HS2oiGgMDSDr71Zw8" target="_blank" rel="noopener noreferrer" class="btn btn-primary speaking-cta">Inquire <span class="arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-mark">
+        <span class="footer-name">Plan Execute Achieve<span class="tm">™</span></span>
+      </div>
+      <div class="footer-meta">
+        <span class="footer-co">© 2026 Plan Execute Achieve LLC</span>
+        <span class="sep">·</span>
+        Tennessee
+        <span class="sep">·</span>
+        <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+        <span class="sep">·</span>
+        <a href="mailto:info@planexecuteachieve.com" class="footer-link">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</div><!-- /root -->
 
 <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin="anonymous"></script>
