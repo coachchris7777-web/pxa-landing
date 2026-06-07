@@ -1684,7 +1684,21 @@ requestAnimationFrame(() => {
 
 <script>
 (function () {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function forceVisible() {
+    document.querySelectorAll('.manifesto-section, .premise-cell, .ft-cell, .research-card').forEach(function (el) {
+      el.classList.add('is-visible');
+    });
+  }
+
+  if (reducedMotion) {
+    window.addEventListener('react-ready', function () {
+      requestAnimationFrame(forceVisible);
+    });
+    if (window.__REACT_RENDERED__) requestAnimationFrame(forceVisible);
+    return;
+  }
 
   var observer = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
@@ -1738,6 +1752,9 @@ requestAnimationFrame(() => {
     }
   }
   setup();
+
+  // Safety net: if anything is still invisible after 3s, force it visible
+  setTimeout(forceVisible, 3000);
 })();
 </script>
 
