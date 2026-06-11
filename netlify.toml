@@ -1,11 +1,10 @@
 # Security headers — planexecuteachieve.com
 # CSP is tuned to what the site actually loads:
-#   - React/ReactDOM/Babel from unpkg.com
+#   - React/ReactDOM (pinned 18.3.1) from unpkg.com
+#   - Site scripts from assets/js/ ('self')
 #   - Google Fonts (fonts.googleapis.com CSS + fonts.gstatic.com files)
-#   - Inline <script> and inline styles ('unsafe-inline')
-#   - 'unsafe-eval' is required by Babel standalone (in-browser JSX transform).
-#     Pre-compiling the JSX at build time would let you remove both
-#     'unsafe-eval' and the unpkg dependency — and speed up page load.
+#   - 'unsafe-inline' applies to styles only (inline style attributes/tags);
+#     scripts are fully external — no unsafe-inline or unsafe-eval needed.
 
 [[headers]]
   for = "/*"
@@ -15,4 +14,4 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(), geolocation=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://docs.google.com"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://docs.google.com"
