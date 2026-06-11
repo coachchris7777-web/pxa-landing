@@ -5,3 +5,10 @@ Thumbs.db
 *~
 .vscode/
 .idea/
+
+# Private working files
+DESIGN.md
+PRODUCT.md
+*(download)*.html
+.claude/
+.impeccable/
